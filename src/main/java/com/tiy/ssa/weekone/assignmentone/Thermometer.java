@@ -1,6 +1,6 @@
 package com.tiy.ssa.weekone.assignmentone;
 
-import org.junit.Test;
+
 
 public class Thermometer {
 	
@@ -20,7 +20,7 @@ public class Thermometer {
 		this(temperature, true);
 		
 		
-	}@Test
+	}
 
 	
 	
