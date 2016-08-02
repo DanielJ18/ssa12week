@@ -11,8 +11,9 @@ public class BatteryTest {
 //		fail("Not yet implemented");
 		
 	
-		assertEquals("", 0, new Battery(150F).discharge(151), 0.01);
+		assertEquals("", 0, new Battery(0).discharge(56), 0.01);
 		assertEquals("", 150, new Battery(150F).charge(25F), 0.01);
+		assertEquals("", 1200 , new Battery(40).timeLeft(2), .01);
 		
 	}
 

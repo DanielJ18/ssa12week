@@ -4,10 +4,12 @@ public class Battery {
 
 	final float capacity; // in kwh
 	float leftOver; // in kwh
+	 int powerRating;
 
 	public Battery(float capacity) {
 		this.capacity = capacity;
 		this.leftOver = capacity;
+		
 	}
 
 	
@@ -35,8 +37,19 @@ public class Battery {
 		return 0;
 	}
 
+	public float timeLeft(float powerRating)
+	{	
+		
+		float hours = this.leftOver/powerRating;
+		
+		float minutes = Math.round(hours *60);
+		
+		return minutes ; // time left to deplete the charge 
+		
+	}
 	
-	
+
+
 	//@OVERRIDE
 //	
 //	public String toString ()
