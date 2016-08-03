@@ -45,11 +45,12 @@ public class Battery {
 
 		float hours = leftOver / powerRating;
 
-		float minutes = Math.round(hours * 60);
+		float minutes = hours * 60;
 
 		return minutes; // time left to deplete the charge
 
 	}
+	
 
 	public float remaining() {
 		return this.leftOver;

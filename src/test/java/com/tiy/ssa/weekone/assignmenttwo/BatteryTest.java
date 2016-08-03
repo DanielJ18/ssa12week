@@ -13,7 +13,7 @@ public class BatteryTest {
 	
 		assertEquals("", 0, new Battery(0).discharge(56), 0.01);
 		assertEquals("", 150, new Battery(150F).charge(25F), 0.01);
-		assertEquals("", 60 , new Battery(2).timeLeft(2), .01);
+		assertEquals("", 0 , new Battery(0).timeLeft(2), .01);
 		
 	}
 	
