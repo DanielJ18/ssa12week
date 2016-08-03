@@ -2,18 +2,18 @@ package com.tiy.ssa.weekone.assignmentone;
 
 public class Power {
 
-	int powerOf, number; 
+	int raisedTo, number; 
 	
 	
-	public Power(int powerOf)
+	public Power(int raisedTo)
 	{
-		this.powerOf = powerOf;
+		this.raisedTo = raisedTo;
 	}
 
 
 	public int base(int number) {
 
-			return  (int) Math.pow(number, powerOf);
+			return  (int) Math.pow(number, this.raisedTo);
 	}
 
 }

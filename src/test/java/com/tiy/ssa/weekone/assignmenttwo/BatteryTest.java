@@ -13,8 +13,16 @@ public class BatteryTest {
 	
 		assertEquals("", 0, new Battery(0).discharge(56), 0.01);
 		assertEquals("", 150, new Battery(150F).charge(25F), 0.01);
-		assertEquals("", 1200 , new Battery(40).timeLeft(2), .01);
+		assertEquals("", 60 , new Battery(2).timeLeft(2), .01);
 		
+	}
+	
+	@Test
+	public void thurston()
+	{
+		Battery b = new Battery(100f);
+		assertEquals(0f, b.discharge(110f), 0);
+		assertEquals(0, b.remaining(), 0);
 	}
 
 }

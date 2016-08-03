@@ -14,7 +14,7 @@ public class PowerTest {
 		assertEquals(4, new Power(2).base(2));
 		assertEquals(8, new Power(3).base(2));
 		assertEquals(16, new Power(4).base(2));
-		assertEquals(32, new Power(5).base(2));
+		assertEquals(1, new Power(5).base(1));
 		
 		
 	}
