@@ -79,6 +79,7 @@ public class PigLatin {
 		char firstChar = word.charAt(0);
 		char secondChar = word.charAt(1);
 
+		
 		for (int i = 2; i < word.length(); i++) {
 
 			newWord = newWord + word.charAt(i);

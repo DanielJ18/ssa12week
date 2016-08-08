@@ -14,14 +14,12 @@ public class MaybePalindrome {
 		int wordLength = word.length();
 
 		for (int i = wordLength - 1; i >= 0; i--)
+		{
 
 			reverseWord = reverseWord + word.charAt(i);
 
-		if (word.equals(reverseWord))
-
-			return true;
-
-		return false;
+		}
+		 return (word.equalsIgnoreCase(reverseWord));
 
 	}
 
